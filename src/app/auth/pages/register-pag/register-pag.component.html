@@ -100,7 +100,7 @@
     </div>
 </div>
 
-
+<h2>Form values: {{ registerForm.value | json}} </h2>
 <h2>Form Valid: {{ registerForm.valid}} </h2>
 <h2>Form Status: {{registerForm.status}} </h2>
 <h2>Form Pending: {{registerForm.pending}} </h2>
@@ -121,4 +121,4 @@
 <pre>{{ registerForm.value.password | json }}</pre>
 
 <h5>Confirmar</h5>
-<pre>{{ registerForm.value.password2 | json }}</pre>
+<pre>{{ registerForm.controls['password2'].errors | json }}</pre>
